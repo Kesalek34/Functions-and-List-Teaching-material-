@@ -1,0 +1,32 @@
+def add_marks(marks):
+    num = int(input("Enter number students marks:"))
+    for i in range(num):
+        mark = int(input("Enter mark:"))
+        marks.append(mark)  #add the mark to the list
+    return marks #return the updated list of marks 
+
+def display_marks(marks):
+    print("Marks:", marks)
+
+def calculate_avg(marks):
+    
+    if len(marks) == 0: #check if the list empty
+        print("There are no marks to calculate the average.")
+    else:
+        avg = sum(marks) / len(marks)
+        print("Average mark:", avg)
+
+#Main programs starts here 
+student_marks = [] #create empty list
+
+student_marks = add_marks(student_marks) 
+calculate_avg(student_marks)
+display_marks(student_marks)
+
+
+
+    
+
+
+
+    
